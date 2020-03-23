@@ -33,8 +33,12 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
 
 - Windows 10 Pro 1909 
 - Visual Studio Community 2019
+- WPF: Windows Presentation Foundation
 -  .NET Framework 4.8
-- Typora for Windows
+-  [Axo Cover](https://marketplace.visualstudio.com/items?itemName=axodox1.AxoCover)
+-  [App Veyer](https://www.appveyor.com/)
+-  [App Center](https://appcenter.ms)
+- [Typora for Windows](https://typora.io/)
 
 
 
