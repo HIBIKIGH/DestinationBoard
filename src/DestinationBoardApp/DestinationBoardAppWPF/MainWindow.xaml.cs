@@ -24,5 +24,12 @@ namespace DestinationBoardAppWPF
         {
             InitializeComponent();
         }
+
+
+        private void QuitButton_Selected(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

@@ -6,10 +6,8 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:DestinationBoardAppWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="720" MinWidth="720" MinHeight="720">
-    <!--TODO: スクリーンスタイルのトグルを設定したら
-    WindowStyle="None"
-    にする-->
+        Title="MainWindow" Height="720" Width="720" MinWidth="720" MinHeight="720"
+        WindowStyle="None">
 
     <Window.Resources>
         <Storyboard x:Key="CloseMenu">
@@ -122,7 +120,7 @@
                     <ListViewItem Height="45" Padding="0" IsEnabled="False">
                     </ListViewItem>
                     
-                    <ListViewItem Height="45" Padding="0">
+                    <ListViewItem Height="45" Padding="0" x:Name="QuitButton" Selected="QuitButton_Selected">
                         <StackPanel Orientation="Horizontal" Margin="10 0">
                             <materialDesign:PackIcon Kind="Shutdown" Width="20" Height="20" Foreground="#FF0069C1" Margin="5" VerticalAlignment="Center"/>
                             <TextBlock Text="終了" Margin="10"/>
