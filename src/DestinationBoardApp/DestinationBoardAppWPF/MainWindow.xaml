@@ -6,8 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:DestinationBoardAppWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="720" MinWidth="720" MinHeight="720"
-        WindowStyle="None">
+        Title="Destination Boad 2020" Height="720" Width="720" MinWidth="720" MinHeight="720">
 
     <Window.Resources>
         <Storyboard x:Key="CloseMenu">
@@ -95,7 +94,7 @@
                     <ListViewItem Height="45" Padding="0" IsEnabled="False">
                     </ListViewItem>
 
-                    <ListViewItem Height="45" Padding="0">
+                    <ListViewItem Height="45" Padding="0" x:Name="ToggleScreenModeButton" Selected="ToggleScreenModeButton_Selected">
                         <StackPanel Orientation="Horizontal" Margin="10 0">
                             <!--TODO: フルスクリーン時はアイコンをFullscreenExitにする name:ScreenIcon -->
                             <materialDesign:PackIcon x:Name="ScreenIcon" Kind="Fullscreen" Width="20" Height="20" Foreground="#FFF08033" Margin="5" VerticalAlignment="Center"/>
