@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DestinationBoardApp.Properties
+namespace DestinationBoardAppWPF.Properties
 {
 
 
