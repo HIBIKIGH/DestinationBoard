@@ -13,5 +13,9 @@ namespace DestinationBoardAppWPF
     /// </summary>
     public partial class App : Application
     {
+        //SQLiteのファイルはユーザローカルに保存する
+        private static readonly string databaseName = "DestinationBoard.db";
+        private static readonly string databaseFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+        public static string DatabasePath = System.IO.Path.Combine(databaseFolderPath, databaseName);
     }
 }
