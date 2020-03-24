@@ -35,6 +35,7 @@ namespace DestinationBoardAppWPF
 
         private void ToggleScreenModeButton_Selected(object sender, RoutedEventArgs e)
         {
+            //TODO: 連続してボタンが押せるように選択解除を実装する
             if (this.isFullScreen)
             {
                 //現在フルスクリーンの場合はウィンドウに戻す
@@ -51,6 +52,11 @@ namespace DestinationBoardAppWPF
                 this.ScreenIcon.Kind = MaterialDesignThemes.Wpf.PackIconKind.FullscreenExit;
                 isFullScreen = true;
             }
+        }
+
+        private void SettingButton_Selected(object sender, RoutedEventArgs e)
+        {
+            ContentsFrame.Navigate(new SettingPage());
         }
     }
 }
