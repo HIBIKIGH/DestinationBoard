@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using DestinationBoardAppWPF.Pages;
+
 namespace DestinationBoardAppWPF
 {
     /// <summary>
@@ -30,7 +32,6 @@ namespace DestinationBoardAppWPF
         private void QuitButton_Selected(object sender, RoutedEventArgs e)
         {
             this.Close();
-
         }
 
         private void ToggleScreenModeButton_Selected(object sender, RoutedEventArgs e)
@@ -53,7 +54,26 @@ namespace DestinationBoardAppWPF
                 isFullScreen = true;
             }
         }
+        private void MainDisplayButton_Selected(object sender, RoutedEventArgs e)
+        {
 
+        }
+        private void OrganizationEditButton_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void PersonEditButton_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void DestinationEditButton_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void HelpButton_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
         private void SettingButton_Selected(object sender, RoutedEventArgs e)
         {
             ContentsFrame.Navigate(new SettingPage());

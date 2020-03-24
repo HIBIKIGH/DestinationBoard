@@ -75,8 +75,8 @@
             <StackPanel>
                 <Image Height="140" Source="Assets/topimage.jpg" Stretch="Fill"/>
                 <ListView x:Name="MenuListView" Foreground="#FF313131" FontFamily="Champagne &amp; Limousines" FontSize="18" BorderThickness="0">
-                    
-                    <ListViewItem Height="45" Padding="0">
+
+                    <ListViewItem Height="45" Padding="0" x:Name="MainDisplayButton" Selected="MainDisplayButton_Selected">
                         <StackPanel Orientation="Horizontal" Margin="10 0">
                             <materialDesign:PackIcon Kind="MonitorDashboard" Width="20" Height="20" Foreground="Gray" Margin="5" VerticalAlignment="Center"/>
                             <TextBlock Text="行先掲示板" Margin="10"/>
@@ -85,22 +85,22 @@
 
                     <ListViewItem Height="45" Padding="0" IsEnabled="False">
                     </ListViewItem>
-                    
-                    <ListViewItem Height="45" Padding="0">
+
+                    <ListViewItem Height="45" Padding="0" x:Name="OrganizationEditButton" Selected="OrganizationEditButton_Selected">
                         <StackPanel Orientation="Horizontal" Margin="10 0">
                             <materialDesign:PackIcon Kind="Tree" Width="20" Height="20" Foreground="Green" Margin="5" VerticalAlignment="Center"/>
                             <TextBlock Text="組織" Margin="10"/>
                         </StackPanel>
                     </ListViewItem>
-                    
-                    <ListViewItem Height="45" Padding="0">
+
+                    <ListViewItem Height="45" Padding="0" x:Name="PersonEditButton" Selected="PersonEditButton_Selected">
                         <StackPanel Orientation="Horizontal" Margin="10 0">
                             <materialDesign:PackIcon Kind="Heart" Width="20" Height="20" Foreground="#FFD41515" Margin="5" VerticalAlignment="Center"/>
                             <TextBlock Text="人" Margin="10"/>
                         </StackPanel>
                     </ListViewItem>
-                    
-                    <ListViewItem Height="45" Padding="0">
+
+                    <ListViewItem Height="45" Padding="0" x:Name="DestinationEditButton" Selected="DestinationEditButton_Selected">
                         <StackPanel Orientation="Horizontal" Margin="10 0">
                             <materialDesign:PackIcon Kind="StarCircle" Width="20" Height="20" Foreground="#FFE6A701" Margin="5" VerticalAlignment="Center"/>
                             <TextBlock Text="行先" Margin="10"/>
@@ -116,8 +116,8 @@
                             <TextBlock Text="フルスクリーン" Margin="10"/>
                         </StackPanel>
                     </ListViewItem>
-                    
-                    <ListViewItem Height="45" Padding="0">
+
+                    <ListViewItem Height="45" Padding="0" x:Name="HelpButton" Selected="HelpButton_Selected">
                         <StackPanel Orientation="Horizontal" Margin="10 0">
                             <materialDesign:PackIcon Kind="HelpCircleOutline" Width="20" Height="20" Foreground="#FFF08033" Margin="5" VerticalAlignment="Center"/>
                             <TextBlock Text="ヘルプ" Margin="10"/>

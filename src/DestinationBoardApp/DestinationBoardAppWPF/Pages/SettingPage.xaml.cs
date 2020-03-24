@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DestinationBoardAppWPF
+namespace DestinationBoardAppWPF.Pages
 {
     /// <summary>
     /// SettingPage.xaml の相互作用ロジック
