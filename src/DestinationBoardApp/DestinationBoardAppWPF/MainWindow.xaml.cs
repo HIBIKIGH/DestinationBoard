@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+//各ページがある名前空間
 using DestinationBoardAppWPF.Pages;
 
 namespace DestinationBoardAppWPF
@@ -23,10 +24,19 @@ namespace DestinationBoardAppWPF
     public partial class MainWindow : Window
     {
         public bool isFullScreen = false;
+        private static MainDisplayPage mainDisplayPage = new MainDisplayPage();
+        private static OrganizationEditPage organizationEditPage  = new OrganizationEditPage();
+        private static PersonEditPage personEditPage = new PersonEditPage();
+        private static DestinationEditPage destinationEditPage = new DestinationEditPage();
+        private static HelpPage helpPage = new HelpPage();
+        private static SettingPage settingPage = new SettingPage();
+
         public MainWindow()
         {
             InitializeComponent();
             this.isFullScreen = false;
+            ContentsFrame.Navigate(mainDisplayPage);
+
         }
 
         private void QuitButton_Selected(object sender, RoutedEventArgs e)
@@ -56,27 +66,32 @@ namespace DestinationBoardAppWPF
         }
         private void MainDisplayButton_Selected(object sender, RoutedEventArgs e)
         {
+            ContentsFrame.Navigate(settingPage);
 
         }
         private void OrganizationEditButton_Selected(object sender, RoutedEventArgs e)
         {
+            ContentsFrame.Navigate(organizationEditPage);
 
         }
         private void PersonEditButton_Selected(object sender, RoutedEventArgs e)
         {
+            ContentsFrame.Navigate(personEditPage);
 
         }
         private void DestinationEditButton_Selected(object sender, RoutedEventArgs e)
         {
+            ContentsFrame.Navigate(destinationEditPage);
 
         }
         private void HelpButton_Selected(object sender, RoutedEventArgs e)
         {
+            ContentsFrame.Navigate(helpPage);
 
         }
         private void SettingButton_Selected(object sender, RoutedEventArgs e)
         {
-            ContentsFrame.Navigate(new SettingPage());
+            ContentsFrame.Navigate(settingPage);
         }
     }
 }

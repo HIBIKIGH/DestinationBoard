@@ -54,7 +54,7 @@
     <Grid>
         <!-- https://cdn.materialdesignicons.com/5.0.45/ -->
         <Grid x:Name="GridBackground" Background="Gray">
-            <Frame x:Name="ContentsFrame" Background="White" Opacity="100"/>
+            <Frame x:Name="ContentsFrame" Background="White" Opacity="100" NavigationUIVisibility="Hidden"/>
         </Grid>
 
         <Button x:Name="ButtonOpen" HorizontalAlignment="Left" VerticalAlignment="Top" 

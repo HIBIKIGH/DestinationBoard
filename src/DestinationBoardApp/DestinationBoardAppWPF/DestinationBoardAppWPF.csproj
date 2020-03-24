@@ -88,11 +88,17 @@
     <Compile Include="Pages\DestinationEditPage.xaml.cs">
       <DependentUpon>DestinationEditPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\HelpPage.xaml.cs">
+      <DependentUpon>HelpPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MainDisplayPage.xaml.cs">
       <DependentUpon>MainDisplayPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\OrganizationEditPage.xaml.cs">
       <DependentUpon>OrganizationEditPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PersonEditPage.xaml.cs">
+      <DependentUpon>PersonEditPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\SettingPage.xaml.cs">
       <DependentUpon>SettingPage.xaml</DependentUpon>
@@ -115,11 +121,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\HelpPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\MainDisplayPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\OrganizationEditPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PersonEditPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
