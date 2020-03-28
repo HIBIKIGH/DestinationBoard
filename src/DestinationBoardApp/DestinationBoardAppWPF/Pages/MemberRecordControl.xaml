@@ -5,70 +5,54 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DestinationBoardAppWPF.Pages"
              mc:Ignorable="d" 
-             Background="White"
-             d:DesignHeight="100" 
-             Height="100">
+             d:DesignHeight="100"
+             d:DesignWidth="1000"
+             Background="White">
     <Grid>
-        <!--<Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.1*"/>
-            <ColumnDefinition Width="0.5*"/>
+        <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.2*"/>
-            <ColumnDefinition Width="0.2*"/>
-        </Grid.ColumnDefinitions>-->
-        <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
-            <Label x:Name="PresenceState" 
-                   Background="Red"
-                   Width="30"
-                   Margin="0,0,0,0" 
-                   />
-            <Label x:Name="HelthState" 
-                   Content="35.9"
-                   FontSize="40"
-                   Background="LightGreen" 
-                   HorizontalAlignment="Center" 
-                   VerticalContentAlignment="Center"
-                   HorizontalContentAlignment="Center"
-                   Width="100"
-                   Margin="0,0,0,0" 
-                   />
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5.8*"/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="1.5*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Grid.Column="0"
+                   x:Name="PresenceState"
+                   Fill="Red"/>
+        <Viewbox Grid.Column="1" 
+                 x:Name="HelthState" 
+                 HorizontalAlignment="Center"
+                 Stretch="UniformToFill">
+            <Label Content="36.0"
+                   Background="LightGreen"/>
+        </Viewbox>
+        <Viewbox Grid.Column="2" Stretch="Uniform" 
+                 HorizontalAlignment="Left">
             <Label x:Name="MemberName" 
                    Content="Member Name"
-                   FontSize="72"
-                   HorizontalAlignment="Center" 
-                   VerticalContentAlignment="Center"
-                   HorizontalContentAlignment="Left"
-                   Width="670"
-                   Margin="0,0,0,0" 
-                   />
-            <StackPanel Width="100">
-                <Label x:Name="DestinationName"
-                   Content="DEST" 
-                   FontSize="30"
-                   HorizontalAlignment="Center" 
-                   VerticalContentAlignment="Center"
-                   HorizontalContentAlignment="Center"
-                   Height="50"
-                   Margin="0,0,0,0" 
-                   />
-                <Label x:Name="DestinationDetail"
-                   Content="DEST" 
-                   FontSize="30"
-                   HorizontalAlignment="Center" 
-                   VerticalContentAlignment="Center"
-                   HorizontalContentAlignment="Center"
-                   Height="50"
-                   Margin="0,0,0,0" 
-                   />
-            </StackPanel>
-            <Label x:Name="ReturnTime" 
-                   Content="00:00" 
-                   FontSize="30"
-                   HorizontalAlignment="Center" 
-                   VerticalContentAlignment="Center"
-                   HorizontalContentAlignment="Center"
-                   Width="100"
-                   Margin="0,0,0,0" 
-                   />
-        </StackPanel>
+                   Margin="5,0,5,0"/>
+        </Viewbox>
+        <Grid Grid.Column="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.3*"/>
+            </Grid.RowDefinitions>
+            <Viewbox Grid.Row="0" 
+                     Stretch="Uniform" 
+                     HorizontalAlignment="Center">
+                <Label x:Name="DestinationName" 
+                       Content="123C"/>
+            </Viewbox>
+            <Viewbox Grid.Row="1" 
+                     Stretch="Uniform" 
+                     HorizontalAlignment="Center">
+                <Label x:Name="DestinationDetail" 
+                       Content="ABC-1F"/>
+            </Viewbox>
+        </Grid>
+        <Viewbox Grid.Column="4" Stretch="UniformToFill">
+            <Label x:Name="ReturningTime" 
+                   Content="00:00"/>
+        </Viewbox>
     </Grid>
 </UserControl>
