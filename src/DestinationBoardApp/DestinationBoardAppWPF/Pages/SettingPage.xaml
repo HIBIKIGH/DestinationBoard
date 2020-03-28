@@ -7,7 +7,7 @@
       mc:Ignorable="d" 
       Title="SettingPage">
 
-    <Grid Background="White">
+    <Grid Background="White" MouseDown="Grid_MouseDown">
         <ScrollViewer
             x:Name="contentSV"
             Grid.Row="1"

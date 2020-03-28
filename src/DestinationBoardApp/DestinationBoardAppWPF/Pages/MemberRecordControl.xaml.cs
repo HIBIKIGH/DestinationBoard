@@ -13,24 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-using System.Windows.Media.Animation;
-
 namespace DestinationBoardAppWPF.Pages
 {
     /// <summary>
-    /// SettingPage.xaml の相互作用ロジック
+    /// MemberRecordControl.xaml の相互作用ロジック
     /// </summary>
-    public partial class SettingPage : Page
+    public partial class MemberRecordControl : UserControl
     {
-        public SettingPage()
+        public MemberRecordControl()
         {
             InitializeComponent();
-        }
-
-        private void Grid_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            var sb = (Storyboard)this.Resources["CloseMenu"];
-            BeginStoryboard(sb);
         }
     }
 }

@@ -53,8 +53,10 @@
     
     <Grid>
         <!-- https://cdn.materialdesignicons.com/5.0.45/ -->
-        <Grid x:Name="GridBackground" Background="Gray">
-            <Frame x:Name="ContentsFrame" Background="White" Opacity="100" NavigationUIVisibility="Hidden"/>
+        <Grid x:Name="GridBackground" Background="Gray"
+              Mouse.MouseDown="GridBackground_MouseDown">
+            <Frame x:Name="ContentsFrame" Background="White" Opacity="100" NavigationUIVisibility="Hidden" 
+                   Mouse.MouseDown="ContentsFrame_MouseDown"/>
         </Grid>
 
         <Button x:Name="ButtonOpen" HorizontalAlignment="Left" VerticalAlignment="Top" 
@@ -62,7 +64,8 @@
             <materialDesign:PackIcon Kind="Menu" Foreground="#FF313131"/>
         </Button>
         
-        <Grid x:Name="GridMenu" Width="250" HorizontalAlignment="Left" Margin="-250 0 0 0" Background="White" RenderTransformOrigin="0.5,0.5">
+        <Grid x:Name="GridMenu" Width="250" HorizontalAlignment="Left" Margin="-250 0 0 0" 
+              Background="White" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

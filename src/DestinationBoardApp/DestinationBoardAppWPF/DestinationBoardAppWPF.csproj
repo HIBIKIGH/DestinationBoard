@@ -94,6 +94,9 @@
     <Compile Include="Pages\MainDisplayPage.xaml.cs">
       <DependentUpon>MainDisplayPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MemberRecordControl.xaml.cs">
+      <DependentUpon>MemberRecordControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\OrganizationEditPage.xaml.cs">
       <DependentUpon>OrganizationEditPage.xaml</DependentUpon>
     </Compile>
@@ -126,6 +129,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\MainDisplayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MemberRecordControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

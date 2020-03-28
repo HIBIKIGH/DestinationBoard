@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 //各ページがある名前空間
 using DestinationBoardAppWPF.Pages;
+using System.Windows.Media.Animation;
 
 namespace DestinationBoardAppWPF
 {
@@ -92,5 +93,16 @@ namespace DestinationBoardAppWPF
             ContentsFrame.Navigate(settingPage);
         }
         #endregion
+
+        private void ContentsFrame_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            //var sb = (Storyboard)this.Resources["CloseMenu"];
+            //BeginStoryboard(sb);
+        }
+
+        private void GridBackground_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
