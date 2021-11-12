@@ -302,6 +302,7 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
 
   - [Windows 10 Pro 21H1](https://docs.microsoft.com/ja-jp/windows/release-health/status-windows-10-21h1)
   - [Visual Studio Community 2022 Version 17](https://visualstudio.microsoft.com/)
+    - インストール時の構成は[こちら](VisualStudio2022InstallConfig.vsconfig)
 
 - Frameworks and Data
 
@@ -313,9 +314,8 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
 
   - TODO: [Axo Cover](https://marketplace.visualstudio.com/items?itemName=axodox1.AxoCover), MSTest
   - TODO: GitHub Actions
-  - TODO: [App Veyer](https://www.appveyor.com/)
   - TODO: [App Center](https://appcenter.ms)
-
+  
 - Packaging & Release
 
   - TODO: GitHub Release
