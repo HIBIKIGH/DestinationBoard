@@ -314,9 +314,8 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
 
   - TODO: [Axo Cover](https://marketplace.visualstudio.com/items?itemName=axodox1.AxoCover), MSTest
   - TODO: GitHub Actions
-  - TODO: [App Veyer](https://www.appveyor.com/)
   - TODO: [App Center](https://appcenter.ms)
-
+  
 - Packaging & Release
 
   - TODO: GitHub Release
