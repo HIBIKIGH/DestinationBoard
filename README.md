@@ -275,6 +275,18 @@ TODO: CIとCDを組んだらステータスバッジを入れる
 
 
 
+# 開発プロセス
+
+- ブランチ戦略
+  - 少し面倒だけどgit-flowを採用
+- 機能開発はdevelopからfeature/*ブランチを作成
+  - 対象機能リリース後はfeatureブランチ削除
+- main, developブランチはPR必須の保護をかける
+- リリースQAはrelease/X.X.Xブランチを作成
+  - 対象機能リリース後はタグを打ってreleaseブランチ削除
+
+
+
 # 開発環境
 
 以下の環境で開発・動作確認しています。
@@ -286,10 +298,16 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
   - [Typora for Windows](https://typora.io/)
   - [INKSCAPE](https://inkscape.org/)
 
+- UI Design
+
+  - [Figma](https://www.figma.com/)
+  - [Figma Windows UI](https://www.figma.com/community/file/989931624019688277)
+  
 - Development Environment
 
   - [Windows 10 Pro 21H1](https://docs.microsoft.com/ja-jp/windows/release-health/status-windows-10-21h1)
   - [Visual Studio Community 2022 Version 17](https://visualstudio.microsoft.com/)
+    - インストール時の構成は[こちら](VisualStudio2022InstallConfig.vsconfig)
 
 - Frameworks and Data
 
@@ -301,7 +319,6 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
 
   - TODO: [Axo Cover](https://marketplace.visualstudio.com/items?itemName=axodox1.AxoCover), MSTest
   - TODO: GitHub Actions
-  - TODO: [App Veyer](https://www.appveyor.com/)
   - TODO: [App Center](https://appcenter.ms)
 
 - Packaging & Release
