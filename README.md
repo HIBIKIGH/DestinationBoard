@@ -298,6 +298,11 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
   - [Typora for Windows](https://typora.io/)
   - [INKSCAPE](https://inkscape.org/)
 
+- UI Design
+
+  - [Figma](https://www.figma.com/)
+  - [Figma Windows UI](https://www.figma.com/community/file/989931624019688277)
+  
 - Development Environment
 
   - [Windows 10 Pro 21H1](https://docs.microsoft.com/ja-jp/windows/release-health/status-windows-10-21h1)
@@ -315,7 +320,7 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
   - TODO: [Axo Cover](https://marketplace.visualstudio.com/items?itemName=axodox1.AxoCover), MSTest
   - TODO: GitHub Actions
   - TODO: [App Center](https://appcenter.ms)
-  
+
 - Packaging & Release
 
   - TODO: GitHub Release
