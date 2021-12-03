@@ -86,8 +86,6 @@ TODO: 実装と同時にスクリーンショットを追加
 
   - TODO: 設定した勤務時間の終了時刻より前に退勤された場合
 
-- TODO: 出勤している場合は緑、未出勤または退勤した場合は赤のドットで表示します。
-
   
 
 ## 検温結果の入力
@@ -105,7 +103,7 @@ TODO: 実装と同時にスクリーンショットを追加
 - TODO: 行先情報は以下から選択します。
   - TODO: 事業所内の場所（エリア、建物、階、部屋、食堂）
   - TODO: 出張（他事業所、社外）
-  - TODO: その他（食事、トイレ、たばこ、社外など）
+  - TODO: その他（食事、トイレ、たばこなど）
 
 - TODO: 行先は[行先の設定](#行先の設定)から任意に増やすことができます。
 
@@ -250,7 +248,6 @@ TODO: 実装と同時にスクリーンショットを追加
 ## その他の便利機能
 
 - TODO: 携帯内線番号に掛ける際のヘルプを表示できるようにしたいです。
-- TODO: 現在時刻を表す時計を表示したいです。
 - TODO: 休憩時間を時計の文字盤の色で示したいです。（24時間時計にしないと無理？）
 - TODO: 時間を設定した、その時間になったらアラームを鳴らせるようにしたいです。
 - TODO: 行動履歴を、指定した人・期間から出力できるようにしたいです。
@@ -259,7 +256,9 @@ TODO: 実装と同時にスクリーンショットを追加
 
 # リリースノート
 
-ナンバリングポリシーとしては[セマンティックバージョニング2.0](https://semver.org/lang/ja/)を採用しています。
+ナンバリングポリシーとしては[セマンティックバージョニング2.0.0](https://semver.org/lang/ja/)を採用しています。
+
+メジャー.マイナー.パッチ 
 
 アルファ版は開発途中ビルド、ベータはリリース候補版として扱います。
 
@@ -305,7 +304,7 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
 
 - Documentation
 
-  - [Typora for Windows](https://typora.io/)
+  - [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)
   - [INKSCAPE](https://inkscape.org/)
 
 - UI Design
@@ -315,7 +314,8 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
   
 - Development Environment
 
-  - [Windows 10 Pro 21H1](https://docs.microsoft.com/ja-jp/windows/release-health/status-windows-10-21h1)
+  - [Windows 10 Pro 21H2](https://docs.microsoft.com/ja-jp/windows/release-health/status-windows-10-21h2)
+  - [Windows 11 Pro 21H2](https://docs.microsoft.com/ja-jp/windows/release-health/windows11-release-information)
   - [Visual Studio Community 2022 Version 17](https://visualstudio.microsoft.com/)
     - インストール時の構成は[こちら](VisualStudio2022InstallConfig.vsconfig)
 
@@ -341,7 +341,7 @@ TODO: 今後、自動UIテストまでCIで組んでいきたいです。
 
 # アプリケーションアーキテクチャ
 
-- Windows 10のデスクトップアプリ
+- Windows 10/11向けのデスクトップアプリ
 
   - [Any CPUで各CPUアーキテクチャに対応](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/compiler-options/output#platformtarget)
 
