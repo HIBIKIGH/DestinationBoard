@@ -5,10 +5,10 @@ using System.Text;
 
 namespace DestinationBoard
 {
-    public class Person
+    public class Organization
     {
         /// <summary>
-        /// 人の名前
+        /// 組織の名称
         /// </summary>
         public string Name
         {
@@ -19,9 +19,9 @@ namespace DestinationBoard
         }
 
         /// <summary>
-        /// 所属組織
+        /// 親組織
         /// </summary>
-        public Organization Organization
+        public Organization ParentOrganization
         {
             get => default;
             set
